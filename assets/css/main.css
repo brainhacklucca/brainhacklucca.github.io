@@ -1521,6 +1521,11 @@ section {
   z-index: 2;
 }
 
+.projects hr {
+  border: 2px solid #023963;
+  border-radius: 
+}
+
 /* Portfolio Section - Home Page
 ------------------------------*/
 .portfolio .portfolio-filters {
