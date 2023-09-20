@@ -1,3 +1,4 @@
 /.fuse*
 templates/*
 other/*
+assets/js/instagram.js
