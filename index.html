@@ -1240,42 +1240,32 @@
 
             </div>
 
-          <div class="col-lg-6">
-            <form action="forms/mail.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="g-recaptcha">
-                    <label>
-                      <input type="checkbox" name="not_a_robot" required> I'm not a robot
-                    </label>
+            <div class="col-lg-6">
+              <form id="contact-form" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                      <input placeholder="Your Name" class="form-control" type="text" id="name" name="name" required>
                   </div>
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <div class="col-md-6">
+                      <input placeholder="Your Email" class="form-control" type="email" id="email" name="email" required>
+                  </div>
+                  <div class="col-md-12">
+                      <input placeholder="Subject" class="form-control" type="text" id="subject" name="subject" required>
+                  </div>
+                  <div class="col-md-12">
+                      <textarea placeholder="Message" class="form-control" id="message" name="message" required></textarea>
+                  </div>
+                  <div class="col-md-12 text-center g-recaptcha">
+                      <label>
+                        <input type="checkbox" name="not_a_robot" required> I'm not a robot
+                      </label>
+                  </div>
+                  <div class="col-md-12 text-center">
+                      <button type="submit" id="submit-button" title="Otherwise send a mail to brainhacklucca@imtlucca.it">Send Message</button>
+                  </div>
                 </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+              </form>
+            </div> <!-- End Contact Form -->
 
         </div>
 
@@ -1296,8 +1286,8 @@
           </a>
           <p>Thank you for visiting our website, we hope you found the initiative interesting and to see you soon!</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://github.com/brainhacklucca" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://twitter.com/BrainHackLucca" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://github.com/brainhacklucca/" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com/BrainHackLucca/" target="_blank"><i class="bi bi-twitter"></i></a>
             <a href="https://www.instagram.com/BrainHackLucca/" target="_blank"><i class="bi bi-instagram"></i></a>
             <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
           </div>
@@ -1375,6 +1365,7 @@
 
   <!-- Other JS File -->
   <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/sendmail.js"></script>
 
 </body>
 
