@@ -174,10 +174,15 @@ section {
   z-index: 997;
 }
 
+.header .imtlogo {
+  height: 80px;
+  /*width: 50px;*/
+}
+/*
 .header .logo img {
   max-height: 100px;
   margin-right: 6px;
-}
+}*/
 
 .header .logo h1 {
   font-size: 24px;
@@ -1974,7 +1979,8 @@ section {
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--primary-color);
+  /*color: var(--primary-color);*/
+  color: rgba(150, 150, 150, 1);
 }
 
 .team .member .member-info {
