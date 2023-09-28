@@ -837,7 +837,7 @@ section {
 .hero .hero-img img {
   position: relative;
   text-align: center;
-  width: 80%;
+  width: 100%;
   /*height: 300px;*/
   background-repeat: no-repeat;
   background-size: contain;
