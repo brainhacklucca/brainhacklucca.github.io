@@ -1405,8 +1405,8 @@ section {
 }
 
 .register .register-btn .title a {
-  /*background-color: #002039;*/
-  background-color: grey;
+  background-color: #002039;
+  /*background-color: grey;*/
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -1416,8 +1416,8 @@ section {
 }
 
 .register .register-btn .title a:hover {
-  /*background-color: #014d5e;*/
-  background-color: grey;
+  background-color: #014d5e;
+  /*background-color: grey;*/
   color: white;
   font-weight: bold;
   padding: 15px 32px;
@@ -1549,17 +1549,18 @@ section {
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 10px;
   display: inline-block;
 }
 
 .projects .submit button:hover {
-  background-color: #023963;
+  background-color: #014d5e;
   color: white;
   font-weight: bold;
   padding: 10px 30px;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 10px;
+  font-weight: bolder;
 }
 
 .projects .submit button a {
