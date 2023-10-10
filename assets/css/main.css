@@ -1458,6 +1458,10 @@ section {
   background-color: rgba(var(--primary-color-rgb), 0.9);
 }
 
+.projects .projects-item p {
+  text-align: justify;
+}
+
 /*.projects .projects-item ul {
   list-style: none;
   padding: 0;
@@ -1486,8 +1490,8 @@ section {
 
 .projects .projects-item .projects-img-bg {
   position: relative;
-  margin-left: 100px;
-  margin-right: 100px
+  margin-left: 150px;
+  margin-right: 0px
   height: 350px;
   width: 350px;
   /*min-height: 300px;*/
