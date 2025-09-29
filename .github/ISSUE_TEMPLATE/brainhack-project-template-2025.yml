@@ -1,20 +1,12 @@
----
-name: Brainhack Project Template 2025
-about: Fill in this template to submit a project
-title: "[PROJECT PROPOSAL]"
-labels: project, question
-assignees: brainhacklucca
-
----
-
 name: Brainhack Project Template 2024
 
 # See the json schema to help you create / update this form
 # https://json.schemastore.org/github-issue-forms.json
 
 description: Fill in this template to submit a project
-
-labels: ["project"]
+title: ["PROJECT PROPOSAL"]
+labels: ["project", "question"]
+assignees: brainhacklucca
 
 # assignees:
 #   - octocat
@@ -424,3 +416,4 @@ body:
             "Add a comment below the main post of your issue saying: `Hi
             @brainhacklucca my project is ready!`"
         - label: Twitter-sized summary of your project pitch.
+
