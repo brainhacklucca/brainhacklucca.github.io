@@ -17,11 +17,11 @@ body:
       value: |
         ## Guidelines
 
-        We are very excited to meet you at Brainhack Global 2024 🎉.
+        We are very excited to meet you at Brainhack Global 2025 🎉.
 
         To submit a project:
 
-        - register to the most suitable [Brainhack Global 2024 events](https://brainhack.org/global2024/events/) for your location, time zone, interest... In this case you should register to [BrainHack Lucca](https://brainhacklucca.github.io/index.html)
+        - register to the most suitable [Brainhack Global 2025 events](https://brainhack.org/global2025/events/) for your location, time zone, interest... In this case you should register to [BrainHack Lucca](https://brainhacklucca.github.io/index.html)
 
         - make sure you have read our **[Guidelines for Leading and Attending to Brainhack Projects](https://github.com/brainhackorg/bhg-event-materials/blob/master/docs/leading_and_attending_to_brainhack_projects.md)** to increase the diversity and inclusivity of your project work
 
@@ -83,7 +83,7 @@ body:
     attributes:
       description:
         Brainhack Global event you registered for. Several options are possible.
-      label: Brainhack Global 2024 Event
+      label: Brainhack Global 2025 Event
       multiple: true
       options:
         - Brainhack Lucca
