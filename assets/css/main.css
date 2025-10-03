@@ -37,8 +37,8 @@
   --nav-hover-color: #002039;
   --nav-dropdown-color: #3a3939;
   --nav-dropdown-hover-color: #002039;
-  --nav-dropdown-background-color: #ffffff;
-  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: rgba(217, 96, 0, 0.4);
+  --nav-mobile-background-color: rgba(217, 96, 0, 1);
 }
 
 /* Smooth scroll */
@@ -265,7 +265,7 @@ section {
 /* Home Page Custom Header on page scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
+  --background-color: rgba(217, 96, 0, 0.98);
   --secondary-color: #444444;
   --nav-color: #444444;
   --nav-hover-color: #023963;
@@ -971,6 +971,7 @@ section {
 ------------------------------*/
 .clients {
   padding: 10px 0;
+  background-color: rgba(217, 96, 0, 0.4);
 }
 
 .clients .client-logo {
@@ -1110,6 +1111,7 @@ section {
 -------------------------*/
 #schedule {
   padding: 60px 0 60px 0;
+  background-color: rgba(217, 96, 0, 0.4);
 }
 
 #schedule .nav-tabs {
@@ -1185,14 +1187,14 @@ section {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
+  border-bottom: 1px solid #002039;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
 
 #schedule .schedule-item:hover {
-  background-color: #fff;
+  background-color: #f7dfcc;
 }
 
 #schedule .schedule-item time {
@@ -1432,6 +1434,9 @@ section {
 
 /* --End Carousel--*/
 
+.projects {
+  background-color: rgba(217, 96, 0, 0.4);
+}
 
 .projects .projects-item {
   color: rgba(var(--default-color-rgb), 0.8);
@@ -1489,8 +1494,8 @@ section {
 }*/
 
 .projects .projects-item img {
-  border: 6px solid var(--background-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  /*border: 6px solid var(--background-color);*/
+  /*box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);*/
 }
 
 .projects .projects-item .projects-img-bg {
@@ -1549,8 +1554,7 @@ section {
 }
 
 .projects hr {
-  border: 2px solid #023963;
-  border-radius: 
+  border: 2px solid #002039;
 }
 
 .projects .submit button {
@@ -1836,13 +1840,17 @@ section {
 
 /* Faq Section - Home Page
 ------------------------------*/
+.faq {
+  background-color: rgba(217, 96, 0, 0.4);
+}
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
 }
 
 .faq .content p {
-  font-size: 15px;
+  font-size: 20px;
   color: rgba(var(--default-color-rgb), 0.7);
 }
 
@@ -1853,6 +1861,7 @@ section {
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
   overflow: hidden;
+  background-color: #f7dfcc;
   /*max-height: 60px;*/
   /*display: flex;*/
 }
@@ -2220,12 +2229,17 @@ section {
 
 /* Recent-posts Section - Home Page
 ------------------------------*/
+.recent-posts {
+  background-color: rgba(217, 96, 0, 0.4);
+}
+
 .recent-posts article {
   box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
   padding: 10%;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  background-color: rgba(217, 96, 0, 1);
 }
 
 /*.recent-posts .post-img {
@@ -2275,6 +2289,10 @@ section {
 
 /* Contact Section - Home Page
 ------------------------------*/
+.contact {
+  background-color: rgba(217, 96, 0, 0.4);
+}
+
 .contact .info-item {
   background: rgba(var(--default-color-rgb), 0.03);
   padding: 30px;
@@ -2300,7 +2318,7 @@ section {
 }
 
 .contact .php-email-form {
-  background: rgba(var(--default-color-rgb), 0.03);
+  background: rgba(var(--default-color-rgb), 0.5);
   padding: 30px;
   height: 100%;
 }
@@ -2433,6 +2451,19 @@ section {
     align-content: center;
     justify-content: center;
   }
+}
+
+/*--------------------------------------------------------------
+# Past Editions Page
+--------------------------------------------------------------*/
+/* Past Section - Past Editions Page
+------------------------------*/
+.past {
+  background-color: rgba(217, 96, 0, 0.4);
+}
+
+.past li {
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
