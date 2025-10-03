@@ -19,8 +19,8 @@
 
 /* Global Colors */
 :root {
-  --background-color: #f0bf99;
-  --background-color-rgb: 240, 191, 153;
+  --background-color: #ffffff;
+  --background-color-rgb: 255, 255, 255;
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
   --primary-color: #002039;
