@@ -1237,6 +1237,23 @@ section {
   margin-bottom: 0;
 }
 
+#schedule .schedule-org h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#schedule .schedule-org p {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 /* Stats Section - Home Page
 ------------------------------*/
@@ -1566,7 +1583,7 @@ section {
   display: inline-block;
 }
 
-.projects .submit button:hover {
+/*.projects .submit button:hover {
   background-color: #014d5e;
   color: white;
   font-weight: bold;
@@ -1574,11 +1591,23 @@ section {
   transition: 0.4s;
   border-radius: 10px;
   font-weight: bolder;
-}
+}*/
 
 .projects .submit button a {
   color: white;
   font-weight: bold;
+}
+
+.projects .submit a:hover {
+  background-color: #002039;
+  /*background-color: grey;*/
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* Portfolio Section - Home Page
