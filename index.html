@@ -92,7 +92,13 @@
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
 
-      <img src="images/head/luccaascii.png" alt="" data-aos="fade-in">
+      <picture data-aos="fade-in">
+        <!-- Mobile version: loaded when viewport ≤ 1400px -->
+        <source srcset="images/head/luccaascii_mobile.png" media="(max-width: 800px)">
+        <!-- Default (desktop) -->
+        <img src="images/head/luccaascii_brutta.png" alt="Lucca skyline ASCII art">
+      </picture>
+      <!-- <img src="images/head/luccaascii_brutta.png" alt="" data-aos="fade-in"  media="(max-width: 1400px)"> -->
 
       <div class="container">
         <div class="row">
@@ -147,7 +153,12 @@
 
         <div class="row align-items-center justify-content-center">
 
-          <div class="col-xl-3 col-md-3 col-6 client-logo">
+          <p>
+            <br>
+            <br>
+          </p>
+
+          <!-- <div class="col-xl-3 col-md-3 col-6 client-logo">
             <a href="https://next-generation-eu.europa.eu/index_it" target="_blank">
               <img src="images/contributors/NGeu_blu.png" class="img-fluid" alt="NextGenerationEU">
             </a>
@@ -169,7 +180,7 @@
             <a href="https://educatingfuturecitizens.com/" target="_blank">
               <img src="images/contributors/efc-logo_blu.png" class="img-fluid" alt="educatingfuturecitizens">
             </a>
-          </div>
+          </div> -->
 
         </div>
 <!--
