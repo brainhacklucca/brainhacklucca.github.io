@@ -961,91 +961,86 @@
         <hr>
 
         <!--Project 1-->
-<!--          <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
+          <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
           <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
-            <img src="images/projects/project1.png" class="img-fluid" alt="">
+            <img src="images/logo/bhl2025_shade_sign.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/9" target="_blank">Exploring How Music Shapes Emotions in the Brain. A network connectivity analysis perspective on fMRI data</a></h3>
-            <p>By <a href="https://github.com/mlionello" target="_blank"><b>Matteo Lionello</b></a></p>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/16" target="_blank">An API to create, read, update, and delete BIDS dataset references in a database</a></h3>
+            <p>By <a href="https://github.com/viacovella" target="_blank"><b>Vittorio Iacovella</b></a></p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj1">Description</a>
 
             <div class="collapse" id='collapse_prj1'>
               <p>
                 <br>
-                Music has a unique ability to evoke emotions, but what’s actually happening in the brain when we feel something while listening to it? This project dives into that question using fMRI data from participants (25) listening to music during fMRI scans (2 runs 20mins each, total +5K timepoints). Some of the boring initial stuff has already been done! Brain data has already been preprocessed, and some cool features are already extracted from the music itself and available to play with - acoustic and spectral qualities, emotional cues, and deep features from a VGGish audio model.
+                This project focuses on developing a lightweight yet functional API using FastAPI to manage references to BIDS datasets stored in a database. The API is designed to handle standard CRUD (Create, Read, Update, Delete) operations, allowing users to insert new dataset metadata, retrieve existing entries, update information, and remove records when needed. By implementing these features, the project aims to create a simple data catalog solution that can help researchers or teams keep track of datasets generated during an ongoing study or collaborative project. Although it is primarily an educational initiative, the project highlights the value of bringing modern web development practices into research environments, where such tools are still not widely adopted. Working on the API provides an opportunity not only to learn FastAPI and backend concepts, but also to approach datasets from a new perspective—coding often reveals new insights, questions, and structural patterns in the data itself. Ultimately, the project aspires to serve as both a learning journey for the author and a small-scale example of how REST APIs can contribute to better data organization in scientific workflows.
                 <br>
-                Here’s what we want to do:
-                <ul>
-                  <li>Understand Brain Connectivity: Figure out which brain networks are involved in processing emotions while listening to music, and track how these networks change over time.</li>
-                  <li>Link Music Features to Brain Activity: Use machine learning and causal analysis to see how different music features (like tempo, spectral, and emotional feedbakcs patterns) impact brain connections and dynamics.</li>
-                </ul>
                 <br>
                 <b>Goals for the BrainHack:</b>
                 <ul>
-                  <li>Framework set up with fMRI data aligned to music features.</li>
-                  <li>Preliminary connectivity and feature-to-network mappings complete.</li>
-                  <li>Eye-catching visualizations, even if they’re just the beginning of the journey.</li>
+                  <li>Test the CRUD capabilities of the API</li>
+                  <li>Display results in a structured table populated with data fetched from the API</li>
                 </ul>
                 <b>Contributors' skills:</b>
                 <br>
                 <ul>
-                  <li>Matlab</li>
-                  <li>Basic fMRI data analysis knowledge</li>
+                  <li>Python</li>
+                  <li>Basic Git skills (commit, push)</li>
                 </ul>
               </p>
             </div>
 
           </div>
-        </div>  --><!-- Project Item LEFT
+        </div>  <!-- Project Item LEFT -->
 
         <hr>
 
         <!--Project 2-->
-         <!-- <div class="row gy-4 align-items-center projects-item">
+          <div class="row gy-4 align-items-center projects-item">
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/8" target="_blank">Functional MRI Analysis of Connectivity and Network Dynamics of central fatigue in Multiple Sclerosis disease</a></h3>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/17" target="_blank">Are we all the same type of person? Exploring individual differences in mood regulation through multi-modal data</a></h3>
             <p>
-              By <b>Alberto Benelli</b>
+              By <a href="https://github.com/armanetti" target="_blank"><b>Arianna Armanetti</b></a>
             </p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj2">Description</a>
 
             <div class="collapse" id='collapse_prj2'>
               <p>
                 <br>
-                Fatigue is a debilitating symptom of multiple sclerosis (MS), affecting over 80% of patients and significantly impairing their quality of life. Despite its prevalence, the neural mechanisms underlying fatigue in MS remain poorly understood. Functional magnetic resonance imaging (fMRI) offers a powerful tool to investigate the brain’s intrinsic connectivity and dynamic network behavior. This project aims to analyze fMRI time-series data to uncover differences in functional connectivity and network dynamics among MS patients with fatigue, MS patients without fatigue, and healthy controls. By identifying distinct connectivity patterns and their relationships with structural MRI findings, this study seeks to advance our understanding of MS-related fatigue and identify potential neuroimaging biomarkers.
-                <br>
+                This project examines whether individuals show distinct behavioral phenotypes and whether these groups differ in their mood dynamics. It uses the LifeSnaps dataset, which contains four months of continuous wearable data, mood reports, and psychometric surveys from 71 participants. The analysis extracts individual behavioral and physiological features and applies Gaussian Mixture Models and other unsupervised methods to identify potential phenotypes, validated statistically and through visualization. Temporal networks based on Vector Autoregressive models are then built to study how variables influence each other over time, comparing feedback patterns between phenotypes, such as differences in sleep–mood relationships. If possible, the project also evaluates whether incorporating phenotype-specific information improves next-day mood prediction.                <br>
                 <br>
                 <b>Goals for the BrainHack:</b>
                 <ul>
-                  <li>Primary Objective: To investigate differences in functional connectivity and network dynamics among:</li>
-                    <ul>
-                      <li>MS patients with fatigue</li>
-                      <li>MS patients without fatigue</li>
-                      <li>Healthy controls</li>
-                    </ul>
-                  <li>Secondary Objectives:</li>
-                    <ul>
-                      <li>To explore correlations between fMRI connectivity metrics and clinical measures of fatigue severity</li>
-                      <li>To integrate structural MRI findings (e.g., lesion load, gray matter atrophy) with functional connectivity results to provide a comprehensive view of the neural underpinnings of fatigue in MS</li>
-                    </ul>
+                  <li>Navigate and preprocess the LifeSnaps multi-modal dataset (EMA, Fitbit, surveys)</li>
+                  <li>Engineer person-level features across sleep, activity, physiology, and mood</li>
+                  <li>Apply Gaussian Mixture Models and other clustering methods to identify behavioral phenotypes</li>
+                  <li>Analyse the resulting phenotypes</li>
+                  <li>Fit Vector Autoregressive models to estimate within-person temporal networks</li>
+                  <li>Aggregate networks by phenotype and compute metrics such as centrality and feedback loops</li>
+                  <li>Compare network structures across phenotypes using statistical tests and visualization</li>
+                  <li>(Optional) Test whether phenotype-specific network information improves next-day mood prediction</li>
                 </ul>
+
                 <b>Contributors' skills:</b>
                 <br>
                 <ul>
-                  <li>Python codind</li>
-                  <li>fMRI</li>
-                  <li>MRI segmentation</li>
-                </ul>
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Time-series Analysis</li>
+                <li>Data Processing</li>
+                <li>Statistical Modelling</li>
+                <li>Network Analysis</li>
+              </ul>
+
               </p>
             </div>
 
           </div>
           <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
-            <img src="images/projects/project_generic.png" class="img-fluid" alt="">
+            <img src="images/projects/project2.png" class="img-fluid" alt="">
           </div>
-        </div> --> <!-- Project Item RIGHT -->
+        </div>  <!-- Project Item RIGHT -->
 
         <hr>
 
