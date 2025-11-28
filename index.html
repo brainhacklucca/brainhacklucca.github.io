@@ -1128,40 +1128,40 @@
         <hr> <!-- Project Item RIGHT -->
 
         <!--Project 5-->
-        <!-- <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
+        <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
           <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
             <img src="images/projects/project5.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/12" target="_blank">Navigating Depression on Social Media: NLP and Cognitive Network Insights</a></h3>
-            <p>By <b>Irene Sánchez Rodríguez</b>, Liber Dorizzi, Mattia Marzi & Riccardo Vella</p>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/20" target="_blank">Associating Dynamic Functional Connectivity with Cognition: Source-based networks from EEG data</a></h3>
+            <p>By <b>Begum Ulku</b>, <b>Cecilia Moro</b></p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj5">Description</a>
 
             <div class="collapse" id='collapse_prj5'>
               <p>
                 <br>
-                We are using NLP and cognitive network analysis to explore and map depression-related discussions on social media, aiming to uncover patterns and insights into how mental health struggles are expressed online. By combining advanced tools like transformer models, interpretability frameworks, and graph analysis, we aim to create a novel approach to understand depression narratives.
-                Resources include pre-trained models and a curated dataset to help participants dive right into preprocessing, modeling, and visualization.
+                We are developing a predictive model for individual working memory (WM) performance based on brain network activity derived from resting-state EEG data. Specifically, we are calculating functional connectivity (FC) matrices from source-localized EEG data and then using these matrices to train a machine learning model (such as Lasso Regression) to map from connectivity to behaviour. The project is for anyone interested in the neural correlates of cognition and investigating the connectivity for cognitive traits. The goal is to identify specific brain networks (groups of interconnected nodes) that are most predictive of working memory scores or any other cognitive domain that collaborators may be interested in investigating! However, the most involved network in the domain of working memory is the fronto-parietal, along with several ROIs such as DLPC, ACC, and anterior insula. Hence, we would form hypotheses based on the literature showing these networks and areas in relation to the task
+                The data will be taken from an open-source data set: Max Planck Institut Leipzig Mind-Brain-Body Dataset - LEMON.
                 <br>
                 <br>
                 <b>Goals for the BrainHack:</b>
                 <ul>
-                  <li>Preprocess and clean the social media dataset</li>
-                  <li>Perform exploratory data analysis to identify key patterns and statistics</li>
-                  <li>Fine-tune transformer-based models for classifying depression-related posts</li>
-                  <li>Use XAI to extract key features driving model predictions</li>
-                  <li>Construct a cognitive network of depression-related terms and relationships</li>
-                  <li>Compare traditional NLP models with network-enhanced approaches</li>
+                  <li>Feature Extraction: <br>
+                    A) Derive the dynamic functional connectivity (dFC) matrix. B) Select different networks (groups of nodes, e.g. those that comprise the fronto-parietal network) and frequencies (e.g., theta) based on previous literature. C) Compute jump length and other indices of interest D) Transform the matrices into a readable format for the specific machine learning model</li>
+                  <li>Train Models: <br>
+                    Train a LASSO regression to predict subjects' cognitive battery scores (e.g. working memory) based on functional connectivity</li>
+                  <li>(Optional) Obtain dFC from individual MRI and run the models with this more accurate feature This option requires segmentation of each subject's MRI into an atlas e.g. (Desikan–Killiany)</li>
                 </ul>
                 <b>Contributors' skills:</b>
                 <br>
                 <ul>
-                  <li>Python coding</li>
-                  <li>NLP and text analysis: Knowledge of text preprocessing, tokenization, and working with existing tools in this matter</li>
-                  <li>Machine learning: Familiarity with training and fine-tuning transformer models like BERT</li>
-                  <li>Graph analysis: Experience with tools like NetworkX or Gephi to build and analyze cognitive networks</li>
-                  <li>Critical thinking and communication: Ability to interpret results, suggest improvements, and collaborate effectively, especially for participants less familiar with coding</li>
+                  <li>Knowledge of neuropsychological testing for cognitive domains and Excel</li>
+                  <li>Knowledge of interpreting dynamic functional connectivity from EEG</li>
+                  <li>General knowledge of supervised and unsupervised machine learning models</li>
+                  <li>Good understanding of general linear regressions (GLMs)</li>
+                  <li>Brainstorm software basics (A MATLAB-based application)</li>
+                  <li>Basic Python skills for machine learning</li>
                 </ul>
               </p>
             </div>
@@ -1169,7 +1169,7 @@
           </div>
         </div> 
 
-        <hr> --> <!-- Project Item LEFT -->
+        <hr> <!-- Project Item LEFT -->
 
         <!--Project 6-->
          <!-- <div class="row gy-4 align-items-center projects-item">
