@@ -1002,38 +1002,32 @@
         <!--Project 2-->
           <div class="row gy-4 align-items-center projects-item">
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/17" target="_blank">Are we all the same type of person? Exploring individual differences in mood regulation through multi-modal data</a></h3>
-            <p>
-              By <a href="https://github.com/armanetti" target="_blank"><b>Arianna Armanetti</b></a>
-            </p>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/24" target="_blank">Frequency-Resolved Functional Connectivity for Sleep Stage Characterization and Automated Sleep Staging</a></h3>
+            <p>By <a href="https://github.com/armanetti" target="_blank"><b>Arianna Armanetti</b></a>, <b>Miguel Ibañez Berganza</b> & <b>Ruggero Basanisi</b></p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj2">Description</a>
 
             <div class="collapse" id='collapse_prj2'>
               <p>
                 <br>
-                This project examines whether individuals show distinct behavioral phenotypes and whether these groups differ in their mood dynamics. It uses the LifeSnaps dataset, which contains four months of continuous wearable data, mood reports, and psychometric surveys from 71 participants. The analysis extracts individual behavioral and physiological features and applies Gaussian Mixture Models and other unsupervised methods to identify potential phenotypes, validated statistically and through visualization. Temporal networks based on Vector Autoregressive models are then built to study how variables influence each other over time, comparing feedback patterns between phenotypes, such as differences in sleep–mood relationships. If possible, the project also evaluates whether incorporating phenotype-specific information improves next-day mood prediction.                <br>
+                Human sleep consists of multiple stages (Wake, N1, N2, N3, REM), each characterized by distinct neurophysiological processes. Traditional sleep staging relies largely on power spectral features (delta, alpha, spindle/sigma, beta) extracted from individual EEG channels. However, sleep is also a highly network-driven process: slow waves exhibit large-scale synchrony, spindles reflect localized thalamo-cortical coupling, and REM sleep shows desynchronized, small-world-like interactions.Despite this, frequency-resolved functional connectivity [1], has been underused in sleep-stage research and rarely incorporated into automatic staging systems. Frequency-dependent covariance allows to capture signatures of collective behavior and of critical behavior, typical of dynamic phase transitions, across diverse frequency bands. Furthermore, the spectral analysis of frequency-dependent covariance may allow projecting brain activity onto a basis of spatiotemporal patterns, facilitating time-dependent dimensionality reduction. In brief, this quantity may reveal network-level signatures and traits of collective behavior - beyond the single-channel behavior -, invisible to traditional methods. This project aims to design an algorithm to efficiently evaluate frequency-resolved connectivity in EEG data, and to systematically evaluate its utility for sleep-stage characterization. Eventually, we would develop a prototype automatic sleep staging algorithm leveraging the network features unveiled by this quantity.                <br>
                 <br>
                 <b>Goals for the BrainHack:</b>
                 <ul>
-                  <li>Navigate and preprocess the LifeSnaps multi-modal dataset (EMA, Fitbit, surveys)</li>
-                  <li>Engineer person-level features across sleep, activity, physiology, and mood</li>
-                  <li>Apply Gaussian Mixture Models and other clustering methods to identify behavioral phenotypes</li>
-                  <li>Analyse the resulting phenotypes</li>
-                  <li>Fit Vector Autoregressive models to estimate within-person temporal networks</li>
-                  <li>Aggregate networks by phenotype and compute metrics such as centrality and feedback loops</li>
-                  <li>Compare network structures across phenotypes using statistical tests and visualization</li>
-                  <li>(Optional) Test whether phenotype-specific network information improves next-day mood prediction</li>
+                  <li>Design an algorithm to efficiently estimate the Frequency-Resolved Covariance matrix, and reproduce the fundamental results of reference [1].</li>
+                  <li>Characterize connectivity patterns across sleep stages using frequency-dependent covariance and related measures. An interesting quantity in this context could be the PCA-based effective dimensionality of the global signal as a function of the frequency, in different sleep stages.</li>
+                  <li>Identify robust network signatures that consistently differentiate stages within and across subjects.</li>
+                  <li>Explore dynamic connectivity within-stage variability and transition dynamics.</li>
                 </ul>
-
+                <br>
+                [1] Rubén Calvo, Carles Martorell, Guillermo B. Morales, Serena Di Santo, and Miguel A. Muñoz, Frequency-Dependent Covariance Reveals Critical Spatiotemporal Patterns of Synchronized Activity in the Human Brain, Phys. Rev. Lett. 133, 208401 (2024).
+                <br>
+                <br>
                 <b>Contributors' skills:</b>
                 <br>
                 <ul>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Time-series Analysis</li>
-                <li>Data Processing</li>
-                <li>Statistical Modelling</li>
-                <li>Network Analysis</li>
+                <li>Minimal Python coding skills</li>
+                <li>Data manipulation</li>
+                
               </ul>
 
               </p>
@@ -1304,6 +1298,58 @@
         </div> 
 
         <hr>  <!-- Project Item RIGHT -->
+
+
+        <!--Project 9-->
+         <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
+          <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
+            <img src="images/projects/project9.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/25" target="_blank">Navigating the space of all possible face</a></h3>
+            <p>By <b>Miguel Ibáñez, Andrea Perna</b></p>
+            <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj7">Description</a>
+
+            <div class="collapse" id='collapse_prj7'>
+              <p>
+                <br>
+                  Scientific background
+
+                  Facial attractiveness is influenced by biological, cultural and individual factors, and may relate to personality traits inferred from facial features. A recent method avoids explicit ratings and instead reconstructs each person’s aesthetic preferences by letting them navigate a low-dimensional face space. This makes it possible to explore questions such as: how much identity information is embedded in someone’s preferred faces? How do geometry and texture interact? How do gender, identity or personality traits shape preferences?
+
+                  Project description
+
+                  The project develops a behavioural experimental framework to study facial aesthetics and perception. It relies on an evolutionary algorithm in which subjects repeatedly choose their preferred image between pairs, and successive generations of synthetic faces adapt to their aesthetic criteria, encoding memory of past choices.
+
+                  The goal is to extend this framework to include texture variation, enabling navigation of a richer face space. This requires integrating two existing codebases so that each individual in the genetic population carries both geometric and texture components.
+
+                  Objective
+
+                  To build software that allows users to explore the space of human faces through binary choices, with full control over geometry and texture. Representing faces through principal components should keep this extended space efficient and manageable to navigate.                <br>
+                <br>  
+              </p>
+                <b>Goals for the BrainHack:</b>
+                <br>
+                <br>
+                Expected outcome:
+                The integrated software that we aim to develop during this hack will make possible running various psychophysical experiments on face recognition, facial attractiveness, and other topics.
+                <br>
+                <br>
+                <b>Contributors' skills:</b>
+                <br>
+                <ul>
+                  <li>Python</li>
+                  <li>Knowledge and understanding of PCA</li>
+                </ul>
+              </p>
+            </div>
+
+          </div>
+        </div> 
+
+        <hr> <!-- Project Item LEFT -->
+
 
       </div>
 
