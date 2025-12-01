@@ -1220,53 +1220,40 @@
         <hr>  <!-- Project Item RIGHT -->
 
         <!--Project 7-->
-        <!-- <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
+         <div class="row gy-4 align-items-stretch justify-content-between projects-item ">
           <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
             <img src="images/projects/project_generic.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/14" target="_blank">Probabilistic models of brain connectivity at rest from fMRI data</a></h3>
-            <p>By <b>Miguel Ibanez Berganza, Arianna Armanetti, Gabriele Poidomani & Francesca Santucci</b></p>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/22" target="_blank">Aperfit: Tearing apart brainwaves from background in electroencephalographic signals</a></h3>
+            <p>By<a href="https://github.com/Gytle" target="_blank"> <b>Guillaume Legendre</b></a></p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj7">Description</a>
 
             <div class="collapse" id='collapse_prj7'>
               <p>
                 <br>
-                We aim to develop a new class of probabilistic models to enhance the understanding of brain connectivity at rest, leveraging resting-state fMRI data. Our goal is to create models that balance the simplicity of traditional Gaussian approaches with the complexity and richness of dynamic models like DCM, addressing neuroscientists' need for more interpretable and efficient tools to analyse functional brain networks.
+                Spectral parameterization is an EEG analysis technique that quantifies two major contributors to the signal: the aperiodic/ fractal component, which reflects the random-walk–like background activity of the EEG, and the oscillatory components, which correspond to synchronous periodic activity of neuronal populations. The aperiodic component raises growing interest because of its associations with neurochemical state, brain maturation, consciousness, and various pathological conditions. However, existing tools often struggle to accurately parameterize the aperiodic component in extreme physiological states (e.g., deep sleep) and typically require a priori parameter choices that can substantially affect results. To address these limitations, we propose developing a new Python package that models and quantifies the aperiodic component empirically from EEG signal properties. This work will clarify the nature of the aperiodic component, how it manifests in the EEG signal and what it reflects about underlying brain activity, an essential step toward improving our understanding of EEG dynamics. By providing an accessible tool to measure the aperiodic component from raw EEG data, this package aims to establish practical standards for the neuroscience community.
                 <br>
-                Our focus will be on extending Gaussian models through regularization techniques and introducing a novel approach based on neural network tools such as the Boltzmann Machine. These methods promise to offer both simplicity and robust performance in capturing the intricacies of brain connectivity.
-                <br>
-                We will use a preprocessed dataset, allowing us to immediately begin developing and testing our models. Our process involves reproducing results from established Gaussian approaches in the literature as a baseline, followed by tackling the more challenging task of implementing and training innovative models.
-                <br>
-                We believe this project is valuable because it introduces fresh, effective methods for modeling brain connectivity using relatively simple yet powerful approaches.
-                <br>
-                <br>
+                <br>  
+              </p>
                 <b>Goals for the BrainHack:</b>
+                <br>
+                <br>
                 <ul>
-                  <li>Baseline implementation: Reproduce existing results using traditional Gaussian models to validate the initial setup</li>
-                  <li>Enhancement of existing model
-                    <ul>
-                      <li>Study the possible regularisation techniques for the gaussian model</li>
-                      <li>Implement 2 or three gaussian regularised models</li>
-                      <li>Test their performance in out-of-sample predictability</li>
-                    </ul>
-                  </li>
-                  <li>Implement a new model
-                    <ul>
-                      <li>Implement the Boltzman Machine for this specific dataset</li>
-                      <li>Train the model</li>
-                      <li>Test its performance in out-of-sample predictability</li>
-                    </ul>
-                  </li>
-                  <li>Comparison: Compare the performance of the different models and find the best one</li>
-                  <li>Bonus: train the Boltzman Machine model on a labeled dataset and test its classification performance</li>
+                  <li>Review existing EEG literature on aperiodic component.</li>
+                  <li>Review literature on modelization of random walk processes from other fields of science.</li>
+                  <li>Find tools to derive model parameters directly from the EEG signal</li>
+                  <li>Check the goodness of fit of this new parameterization technique over existing ones on EEG signals orf various datasets.</li>
+                  <li>BONUS step: Combine this parameterization technique with Generalized Eigendecomposition on multichannels EEG recordings to remove the aperiodic component from EEG recordings.</li>
                 </ul>
                 <b>Contributors' skills:</b>
                 <br>
                 <ul>
                   <li>Python coding</li>
-                  <li>Basic notions of probabilistic models</li>
+                  <li>EEG</li>
+                  <li>Basic algebra</li>
+                  
                 </ul>
               </p>
             </div>
@@ -1274,53 +1261,49 @@
           </div>
         </div> 
 
-        <hr> --> <!-- Project Item LEFT -->
+        <hr> <!-- Project Item LEFT -->
 
         <!--Project 8-->
-         <!-- <div class="row gy-4 align-items-center projects-item">
+          <div class="row gy-4 align-items-center projects-item">
           <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/15" target="_blank">Towards the extension of visual/audio human-computer interfaces based on movement patterns to piano-generated rhythms</a></h3>
+            <h3><a href="https://github.com/brainhacklucca/brainhacklucca.github.io/issues/23" target="_blank">EEG/SoundScapes</a></h3>
             <p>
-              By <b>Gianluca Maraschio, Stefano Menchetti</b>, Francesco Biancalani, Giorgio Stefano Gnecco, Valentina Pieroni & Alessandro Betti
+              By <a href="https://github.com/mlionello" target="_blank"><b>Matteo Lionello,</b></a> <a href="https://github.com/davidecrc" target="_blank"><b>Davide Coraci</b></a>
             </p>
             <a class="btn btn-get-started align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_prj8">Description</a>
 
             <div class="collapse" id='collapse_prj8'>
               <p>
                 <br>
-                Recent studies have explored the potential of rhythmic pattern extraction for the development of human-computer interfaces able to provide visual or audio feedback - potentially in real-time - with various goals, such as assessing the effectiveness of performing specific motor tasks, facilitating learning and skill acquisition, and enhancing the reproducibility of technical gestures. A recent example is the TickTacking interface from Rocchesso et al. (2023), where a trajectory is drawn on a screen based on rhythms extracted by the bimanual tapping of two buttons.
+               Soundscapes conceptualize acoustic environments in terms of how they are perceived, capturing higher‑order attributes such as affective quality and sound‑source composition beyond purely acoustic or psychometric measures. Although neuroscientific research increasingly adopts naturalistic paradigms, neurophysiological evidence linking soundscape attributes to brain activity remains scarce, largely due to the lack of EEG datasets recorded during real soundscape exposure. In this project, we aim to develop a proof‑of‑concept framework for inferring neurocorrelates of dynamic soundscapes by combining two complementary open datasets: (i) a corpus of annotated urban soundscape recordings, and (ii) an EEG dataset with continuous affective ratings (valence and arousal) of urban images. First, we will place the soundscape recordings in the circumplex affective space by extracting audio features and deriving perceptual descriptors from the literature and available annotations. In parallel, we will map the EEG‑derived affective ratings of urban images into the same affective space. By aligning audio-derived affective features with EEG affective responses obtained in a visual modality, we will test whether shared affective structure enables the construction of an encoding model that predicts EEG spectral properties from soundscape acoustic and source‑based features. This exploratory cross‑modal framework will allow us to assess whether affective descriptors of real sound environments can, in principle, be linked to neurophysiological markers, even in the absence of direct EEG‑during‑soundscape datasets.
                 <br>
-                This project aims to explore the possibility of developing an interface similar to TickTacking in which a piano keyboard replaces the two buttons, and the user is either a beginner or an expert pianist. Onset detection (i.e., the detection of the starting time of each note) is of fundamental importance to achieve this goal. Indeed, its analysis allows one to extract the inter-onset interval provided as an input to the interface. Hence, this project is focused on evaluating the feasibility of the application of various algorithms for onsets and tempo detection in the case of publicly available recordings and live performances obtained using an electronic piano at the disposal of the researchers. The project itself is part of the broader PRIN 2022 project MAHATMA (Multiscale Analysis of Human and Artificially Generated Trajectories, Models and Applications).
                 <br>
-                Possible developments of this research are:
-                <ul>
-                  <li>classifying automatically audio excerpts executed by beginners or experts</li>
-                  <li>evaluating the effectiveness of the video/audio feedback generated by the extended interface in the context of a learning process in which a beginner pianist follows a rhythmic (or polyrhythmic) pattern generated by an expert</li>
-                  <li>generating artificial rhythmic patterns imitating expert behavior using generative adversarial learning techniques</li>
-                </ul>
+              </p>
                 <b>Goals for the BrainHack:</b>
-                <ul>
-                  <li>Evaluating the feasibility of the application of various algorithms for onsets and tempo detection (applied, e.g., to the first prelude of Bach's Well-Tempered Clavier and the first movement of Beethoven's Moonlight Sonata) in the case of publicly available recordings and live performances obtained using an electronic piano at the disposal of the researchers</li>
-                  <li>Extracting various inter-onset intervals from the available data and performing their statistical analysis</li>
-                </ul>
+                <br>
+                <br>
+                Discuss strategies, develop a pipeline for the processing, discuss implementation, future direction, and impacts<br>
+                <br>
                 <b>Contributors' skills:</b>
                 <br>
+                Any among:
+                <br>
                 <ul>
-                  <li>MATLAB programming</li>
-                  <li>Python programming</li>
-                  <li>ML and statistical analysis</li>
-                  <li>Sound processing (basic)</li>
+                  <li>EEG</li>
+                  <li>Soundscapes</li>
+                  <li>Deep learning</li>
+                  <li>Audio & acoustics</li>
                 </ul>
               </p>
             </div>
 
           </div>
           <div class="col-lg-5 d-flex align-items-center projects-img-bg" data-aos="zoom-out">
-            <img src="images/projects/project_generic.png" class="img-fluid" alt="">
+            <img src="images/projects/project8.png" class="img-fluid" alt="">
           </div>
         </div> 
 
-        <hr> -->  <!-- Project Item RIGHT -->
+        <hr>  <!-- Project Item RIGHT -->
 
       </div>
 
